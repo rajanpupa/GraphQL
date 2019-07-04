@@ -22,8 +22,7 @@ public class Book {
     private String publisher;
 
     @OneToMany(mappedBy = "book",
-            cascade = CascadeType.ALL,
-            fetch = FetchType.EAGER
+            cascade = CascadeType.ALL
     )
     private Set<Author> authors;
 
